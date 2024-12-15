@@ -1,1 +1,1 @@
-hand.png
+photos/hand.png

@@ -14,8 +14,11 @@ row=256;
 colum=256;
 img=imread('cameraman.tif');
 img=imresize(img,[row,colum]);
+%img=rgb2gray(img);
+% img=histeq(img);
 img=im2double(img);
 origin=img;
+% img=medfilt2(img);
 toc
 %% Scale-Space Extrema Detection
 tic
@@ -66,7 +69,7 @@ for i=1:octave
     temp_img=padarray(temp_img,[1,1],'both','replicate');
 end
 toc
-%% Keypoint Localisation
+%% Keypoint Localistaion
 % search each pixel in the DoG map to find the extreme point
 tic
 interval=level-1;
@@ -83,6 +86,7 @@ for i=1:octave
     volume=m*n/(4^(i-1));
     for k=2:interval      
         for j=1:volume
+            % starter=D{i}(x+1,y+1,k);
             x=ceil(j/n);
             y=mod(j-1,m)+1;
             sub=D{i}(x:x+2,y:y+2,k-1:k+1);

@@ -14,7 +14,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Multiscale representation theory.
 - **Tools Used:** MATLAB (toolbox functions like `gen_Pyr`, `pyrBlend`).
 
-### 2. Geometric Transformations ([Details](CV_TRANSFORMATIONS.pdf))
+### 2. Geometric Transformations ([Details](CV_2-TRANSFORMATIONS/CV_TRANSFORMATIONS.pdf))
 - **Objective:** Familiarize with geometric transformations like scaling, rotation, and shearing.
 - **Topics Covered:**
   - Image manipulation and animation using affine transformations.
@@ -22,7 +22,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Interpolation methods and quality comparisons.
 - **Tools Used:** MATLAB (`imread`, `imwrap`, `affine2d`, etc.)
 
-### 3. Scale-Invariant Feature Transform (SIFT) ([Details](CV_3-SIFT.pdf))
+### 3. Scale-Invariant Feature Transform (SIFT) ([Details](CV_3-SIFT/CV_3-SIFT.pdf))
 - **Objective:** Understand and implement the SIFT algorithm for feature detection and description.
 - **Topics Covered:**
   - Detection of keypoints and local extrema in scale-space.
@@ -30,7 +30,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Matching features between images for alignment.
 - **Tools Used:** MATLAB/Python (OpenCV).
 
-### 4. Image Alignment ([Details](CV_4-ALIGNMENT.pdf))
+### 4. Image Alignment ([Details](CV_4-ALIGNMENT_mdl/CV_4-ALIGNMENT.pdf))
 - **Objective:** Study and compare image alignment algorithms.
 - **Topics Covered:**
   - Enhanced Correlation Coefficient (ECC) and Lucas-Kanade (LK) algorithms.
@@ -38,7 +38,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Noise analysis and PSNR evaluation.
 - **Tools Used:** MATLAB (ECC, LK alignment functions).
 
-### 5. Autoencoders and Variational Autoencoders ([Details](CV_5_AUTOENCODERS.pdf))
+### 5. Autoencoders and Variational Autoencoders ([Details](CV_5-AUTOENCODERS/CV_5_AUTOENCODERS.pdf))
 - **Objective:** Explore dimensionality reduction and feature learning using Autoencoders (AEs) and Variational Autoencoders (VAEs).
 - **Topics Covered:**
   - Principal Component Analysis (PCA) as a baseline.
@@ -46,7 +46,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Reconstruction quality and visualization of learned features.
 - **Tools Used:** Python (TensorFlow/Keras or PyTorch).
 
-### 6. Convolutional Neural Networks (CNNs) for Object Detection ([Details](CV_CNN-1.pdf))
+### 6. Convolutional Neural Networks (CNNs) for Object Detection ([Details](CV_6-CNN/CV_CNN-1.pdf))
 - **Objective:** Apply deep learning for object detection and localization.
 - **Topics Covered:**
   - R-CNN architecture and its components (region proposal, feature extraction, classification).

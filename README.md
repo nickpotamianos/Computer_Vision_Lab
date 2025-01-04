@@ -6,7 +6,7 @@ This repository contains exercises from the Computer Vision course at the Univer
 
 ## Exercises Overview
 
-### 1. Gaussian and Laplacian Pyramids ([Details](CV_PYRAMIDS.pdf))
+### 1. Gaussian and Laplacian Pyramids ([Details](CV_1-PYRAMIDS/CV_PYRAMIDS.pdf))
 - **Objective:** Image decomposition into multiple scales using Gaussian and Laplacian pyramids.
 - **Topics Covered:**
   - Image denoising and enhancement.

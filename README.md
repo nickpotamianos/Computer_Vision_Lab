@@ -1,6 +1,6 @@
 # Computer Vision Lab
 
-Welcome to the **Computer Vision Lab** repository! This repository contains exercises from the Computer Vision course at the University of Patras, focused on foundational and advanced techniques in computer vision. Each exercise builds on theoretical concepts and practical applications, utilizing tools like MATLAB and Python (OpenCV).
+This repository contains exercises from the Computer Vision course at the University of Patras, focused on foundational and advanced techniques in computer vision. Each exercise builds on theoretical concepts and practical applications, utilizing tools like MATLAB and Python (OpenCV).
 
 ---
 

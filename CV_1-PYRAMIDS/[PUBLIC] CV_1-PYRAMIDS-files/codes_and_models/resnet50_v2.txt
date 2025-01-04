@@ -1,0 +1,556 @@
+ - conv1.weight
+ - bn1.weight
+ - bn1.bias
+ - bn1.running_mean
+ - bn1.running_var
+ - conv2.weight
+ - bn2.weight
+ - bn2.bias
+ - bn2.running_mean
+ - bn2.running_var
+ - conv3.weight
+ - bn3.weight
+ - bn3.bias
+ - bn3.running_mean
+ - bn3.running_var
+ - layer1.0.conv1.weight
+ - layer1.0.bn1.weight
+ - layer1.0.bn1.bias
+ - layer1.0.bn1.running_mean
+ - layer1.0.bn1.running_var
+ - layer1.0.conv2.weight
+ - layer1.0.bn2.weight
+ - layer1.0.bn2.bias
+ - layer1.0.bn2.running_mean
+ - layer1.0.bn2.running_var
+ - layer1.0.conv3.weight
+ - layer1.0.bn3.weight
+ - layer1.0.bn3.bias
+ - layer1.0.bn3.running_mean
+ - layer1.0.bn3.running_var
+ - layer1.0.downsample.0.weight
+ - layer1.0.downsample.1.weight
+ - layer1.0.downsample.1.bias
+ - layer1.0.downsample.1.running_mean
+ - layer1.0.downsample.1.running_var
+ - layer1.1.conv1.weight
+ - layer1.1.bn1.weight
+ - layer1.1.bn1.bias
+ - layer1.1.bn1.running_mean
+ - layer1.1.bn1.running_var
+ - layer1.1.conv2.weight
+ - layer1.1.bn2.weight
+ - layer1.1.bn2.bias
+ - layer1.1.bn2.running_mean
+ - layer1.1.bn2.running_var
+ - layer1.1.conv3.weight
+ - layer1.1.bn3.weight
+ - layer1.1.bn3.bias
+ - layer1.1.bn3.running_mean
+ - layer1.1.bn3.running_var
+ - layer1.2.conv1.weight
+ - layer1.2.bn1.weight
+ - layer1.2.bn1.bias
+ - layer1.2.bn1.running_mean
+ - layer1.2.bn1.running_var
+ - layer1.2.conv2.weight
+ - layer1.2.bn2.weight
+ - layer1.2.bn2.bias
+ - layer1.2.bn2.running_mean
+ - layer1.2.bn2.running_var
+ - layer1.2.conv3.weight
+ - layer1.2.bn3.weight
+ - layer1.2.bn3.bias
+ - layer1.2.bn3.running_mean
+ - layer1.2.bn3.running_var
+ - layer2.0.conv1.weight
+ - layer2.0.bn1.weight
+ - layer2.0.bn1.bias
+ - layer2.0.bn1.running_mean
+ - layer2.0.bn1.running_var
+ - layer2.0.conv2.weight
+ - layer2.0.bn2.weight
+ - layer2.0.bn2.bias
+ - layer2.0.bn2.running_mean
+ - layer2.0.bn2.running_var
+ - layer2.0.conv3.weight
+ - layer2.0.bn3.weight
+ - layer2.0.bn3.bias
+ - layer2.0.bn3.running_mean
+ - layer2.0.bn3.running_var
+ - layer2.0.downsample.0.weight
+ - layer2.0.downsample.1.weight
+ - layer2.0.downsample.1.bias
+ - layer2.0.downsample.1.running_mean
+ - layer2.0.downsample.1.running_var
+ - layer2.1.conv1.weight
+ - layer2.1.bn1.weight
+ - layer2.1.bn1.bias
+ - layer2.1.bn1.running_mean
+ - layer2.1.bn1.running_var
+ - layer2.1.conv2.weight
+ - layer2.1.bn2.weight
+ - layer2.1.bn2.bias
+ - layer2.1.bn2.running_mean
+ - layer2.1.bn2.running_var
+ - layer2.1.conv3.weight
+ - layer2.1.bn3.weight
+ - layer2.1.bn3.bias
+ - layer2.1.bn3.running_mean
+ - layer2.1.bn3.running_var
+ - layer2.2.conv1.weight
+ - layer2.2.bn1.weight
+ - layer2.2.bn1.bias
+ - layer2.2.bn1.running_mean
+ - layer2.2.bn1.running_var
+ - layer2.2.conv2.weight
+ - layer2.2.bn2.weight
+ - layer2.2.bn2.bias
+ - layer2.2.bn2.running_mean
+ - layer2.2.bn2.running_var
+ - layer2.2.conv3.weight
+ - layer2.2.bn3.weight
+ - layer2.2.bn3.bias
+ - layer2.2.bn3.running_mean
+ - layer2.2.bn3.running_var
+ - layer2.3.conv1.weight
+ - layer2.3.bn1.weight
+ - layer2.3.bn1.bias
+ - layer2.3.bn1.running_mean
+ - layer2.3.bn1.running_var
+ - layer2.3.conv2.weight
+ - layer2.3.bn2.weight
+ - layer2.3.bn2.bias
+ - layer2.3.bn2.running_mean
+ - layer2.3.bn2.running_var
+ - layer2.3.conv3.weight
+ - layer2.3.bn3.weight
+ - layer2.3.bn3.bias
+ - layer2.3.bn3.running_mean
+ - layer2.3.bn3.running_var
+ - layer3.0.conv1.weight
+ - layer3.0.bn1.weight
+ - layer3.0.bn1.bias
+ - layer3.0.bn1.running_mean
+ - layer3.0.bn1.running_var
+ - layer3.0.conv2.weight
+ - layer3.0.bn2.weight
+ - layer3.0.bn2.bias
+ - layer3.0.bn2.running_mean
+ - layer3.0.bn2.running_var
+ - layer3.0.conv3.weight
+ - layer3.0.bn3.weight
+ - layer3.0.bn3.bias
+ - layer3.0.bn3.running_mean
+ - layer3.0.bn3.running_var
+ - layer3.0.downsample.0.weight
+ - layer3.0.downsample.1.weight
+ - layer3.0.downsample.1.bias
+ - layer3.0.downsample.1.running_mean
+ - layer3.0.downsample.1.running_var
+ - layer3.1.conv1.weight
+ - layer3.1.bn1.weight
+ - layer3.1.bn1.bias
+ - layer3.1.bn1.running_mean
+ - layer3.1.bn1.running_var
+ - layer3.1.conv2.weight
+ - layer3.1.bn2.weight
+ - layer3.1.bn2.bias
+ - layer3.1.bn2.running_mean
+ - layer3.1.bn2.running_var
+ - layer3.1.conv3.weight
+ - layer3.1.bn3.weight
+ - layer3.1.bn3.bias
+ - layer3.1.bn3.running_mean
+ - layer3.1.bn3.running_var
+ - layer3.2.conv1.weight
+ - layer3.2.bn1.weight
+ - layer3.2.bn1.bias
+ - layer3.2.bn1.running_mean
+ - layer3.2.bn1.running_var
+ - layer3.2.conv2.weight
+ - layer3.2.bn2.weight
+ - layer3.2.bn2.bias
+ - layer3.2.bn2.running_mean
+ - layer3.2.bn2.running_var
+ - layer3.2.conv3.weight
+ - layer3.2.bn3.weight
+ - layer3.2.bn3.bias
+ - layer3.2.bn3.running_mean
+ - layer3.2.bn3.running_var
+ - layer3.3.conv1.weight
+ - layer3.3.bn1.weight
+ - layer3.3.bn1.bias
+ - layer3.3.bn1.running_mean
+ - layer3.3.bn1.running_var
+ - layer3.3.conv2.weight
+ - layer3.3.bn2.weight
+ - layer3.3.bn2.bias
+ - layer3.3.bn2.running_mean
+ - layer3.3.bn2.running_var
+ - layer3.3.conv3.weight
+ - layer3.3.bn3.weight
+ - layer3.3.bn3.bias
+ - layer3.3.bn3.running_mean
+ - layer3.3.bn3.running_var
+ - layer3.4.conv1.weight
+ - layer3.4.bn1.weight
+ - layer3.4.bn1.bias
+ - layer3.4.bn1.running_mean
+ - layer3.4.bn1.running_var
+ - layer3.4.conv2.weight
+ - layer3.4.bn2.weight
+ - layer3.4.bn2.bias
+ - layer3.4.bn2.running_mean
+ - layer3.4.bn2.running_var
+ - layer3.4.conv3.weight
+ - layer3.4.bn3.weight
+ - layer3.4.bn3.bias
+ - layer3.4.bn3.running_mean
+ - layer3.4.bn3.running_var
+ - layer3.5.conv1.weight
+ - layer3.5.bn1.weight
+ - layer3.5.bn1.bias
+ - layer3.5.bn1.running_mean
+ - layer3.5.bn1.running_var
+ - layer3.5.conv2.weight
+ - layer3.5.bn2.weight
+ - layer3.5.bn2.bias
+ - layer3.5.bn2.running_mean
+ - layer3.5.bn2.running_var
+ - layer3.5.conv3.weight
+ - layer3.5.bn3.weight
+ - layer3.5.bn3.bias
+ - layer3.5.bn3.running_mean
+ - layer3.5.bn3.running_var
+ - layer4.0.conv1.weight
+ - layer4.0.bn1.weight
+ - layer4.0.bn1.bias
+ - layer4.0.bn1.running_mean
+ - layer4.0.bn1.running_var
+ - layer4.0.conv2.weight
+ - layer4.0.bn2.weight
+ - layer4.0.bn2.bias
+ - layer4.0.bn2.running_mean
+ - layer4.0.bn2.running_var
+ - layer4.0.conv3.weight
+ - layer4.0.bn3.weight
+ - layer4.0.bn3.bias
+ - layer4.0.bn3.running_mean
+ - layer4.0.bn3.running_var
+ - layer4.0.downsample.0.weight
+ - layer4.0.downsample.1.weight
+ - layer4.0.downsample.1.bias
+ - layer4.0.downsample.1.running_mean
+ - layer4.0.downsample.1.running_var
+ - layer4.1.conv1.weight
+ - layer4.1.bn1.weight
+ - layer4.1.bn1.bias
+ - layer4.1.bn1.running_mean
+ - layer4.1.bn1.running_var
+ - layer4.1.conv2.weight
+ - layer4.1.bn2.weight
+ - layer4.1.bn2.bias
+ - layer4.1.bn2.running_mean
+ - layer4.1.bn2.running_var
+ - layer4.1.conv3.weight
+ - layer4.1.bn3.weight
+ - layer4.1.bn3.bias
+ - layer4.1.bn3.running_mean
+ - layer4.1.bn3.running_var
+ - layer4.2.conv1.weight
+ - layer4.2.bn1.weight
+ - layer4.2.bn1.bias
+ - layer4.2.bn1.running_mean
+ - layer4.2.bn1.running_var
+ - layer4.2.conv2.weight
+ - layer4.2.bn2.weight
+ - layer4.2.bn2.bias
+ - layer4.2.bn2.running_mean
+ - layer4.2.bn2.running_var
+ - layer4.2.conv3.weight
+ - layer4.2.bn3.weight
+ - layer4.2.bn3.bias
+ - layer4.2.bn3.running_mean
+ - layer4.2.bn3.running_var
+ - fc.weight
+ - fc.bias
+
+Περιεχόμενο του checkpoint (state_dict):
+Layer: conv1.weight | Shape: torch.Size([64, 3, 3, 3]) | Type: torch.float32
+Layer: bn1.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn1.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn1.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn1.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: conv2.weight | Shape: torch.Size([64, 64, 3, 3]) | Type: torch.float32
+Layer: bn2.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn2.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn2.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: bn2.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: conv3.weight | Shape: torch.Size([128, 64, 3, 3]) | Type: torch.float32
+Layer: bn3.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: bn3.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: bn3.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: bn3.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer1.0.conv1.weight | Shape: torch.Size([64, 128, 1, 1]) | Type: torch.float32
+Layer: layer1.0.bn1.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn1.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn1.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn1.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.conv2.weight | Shape: torch.Size([64, 64, 3, 3]) | Type: torch.float32
+Layer: layer1.0.bn2.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn2.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn2.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.bn2.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.0.conv3.weight | Shape: torch.Size([256, 64, 1, 1]) | Type: torch.float32
+Layer: layer1.0.bn3.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.bn3.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.bn3.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.bn3.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.downsample.0.weight | Shape: torch.Size([256, 128, 1, 1]) | Type: torch.float32
+Layer: layer1.0.downsample.1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.downsample.1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.downsample.1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.0.downsample.1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.1.conv1.weight | Shape: torch.Size([64, 256, 1, 1]) | Type: torch.float32
+Layer: layer1.1.bn1.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn1.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn1.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn1.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.conv2.weight | Shape: torch.Size([64, 64, 3, 3]) | Type: torch.float32
+Layer: layer1.1.bn2.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn2.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn2.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.bn2.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.1.conv3.weight | Shape: torch.Size([256, 64, 1, 1]) | Type: torch.float32
+Layer: layer1.1.bn3.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.1.bn3.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.1.bn3.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.1.bn3.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.2.conv1.weight | Shape: torch.Size([64, 256, 1, 1]) | Type: torch.float32
+Layer: layer1.2.bn1.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn1.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn1.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn1.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.conv2.weight | Shape: torch.Size([64, 64, 3, 3]) | Type: torch.float32
+Layer: layer1.2.bn2.weight | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn2.bias | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn2.running_mean | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.bn2.running_var | Shape: torch.Size([64]) | Type: torch.float32
+Layer: layer1.2.conv3.weight | Shape: torch.Size([256, 64, 1, 1]) | Type: torch.float32
+Layer: layer1.2.bn3.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.2.bn3.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.2.bn3.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer1.2.bn3.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer2.0.conv1.weight | Shape: torch.Size([128, 256, 1, 1]) | Type: torch.float32
+Layer: layer2.0.bn1.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn1.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn1.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn1.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.conv2.weight | Shape: torch.Size([128, 128, 3, 3]) | Type: torch.float32
+Layer: layer2.0.bn2.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn2.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn2.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.bn2.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.0.conv3.weight | Shape: torch.Size([512, 128, 1, 1]) | Type: torch.float32
+Layer: layer2.0.bn3.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.bn3.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.bn3.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.bn3.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.downsample.0.weight | Shape: torch.Size([512, 256, 1, 1]) | Type: torch.float32
+Layer: layer2.0.downsample.1.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.downsample.1.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.downsample.1.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.0.downsample.1.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.1.conv1.weight | Shape: torch.Size([128, 512, 1, 1]) | Type: torch.float32
+Layer: layer2.1.bn1.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn1.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn1.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn1.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.conv2.weight | Shape: torch.Size([128, 128, 3, 3]) | Type: torch.float32
+Layer: layer2.1.bn2.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn2.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn2.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.bn2.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.1.conv3.weight | Shape: torch.Size([512, 128, 1, 1]) | Type: torch.float32
+Layer: layer2.1.bn3.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.1.bn3.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.1.bn3.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.1.bn3.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.2.conv1.weight | Shape: torch.Size([128, 512, 1, 1]) | Type: torch.float32
+Layer: layer2.2.bn1.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn1.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn1.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn1.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.conv2.weight | Shape: torch.Size([128, 128, 3, 3]) | Type: torch.float32
+Layer: layer2.2.bn2.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn2.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn2.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.bn2.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.2.conv3.weight | Shape: torch.Size([512, 128, 1, 1]) | Type: torch.float32
+Layer: layer2.2.bn3.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.2.bn3.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.2.bn3.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.2.bn3.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.3.conv1.weight | Shape: torch.Size([128, 512, 1, 1]) | Type: torch.float32
+Layer: layer2.3.bn1.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn1.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn1.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn1.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.conv2.weight | Shape: torch.Size([128, 128, 3, 3]) | Type: torch.float32
+Layer: layer2.3.bn2.weight | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn2.bias | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn2.running_mean | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.bn2.running_var | Shape: torch.Size([128]) | Type: torch.float32
+Layer: layer2.3.conv3.weight | Shape: torch.Size([512, 128, 1, 1]) | Type: torch.float32
+Layer: layer2.3.bn3.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.3.bn3.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.3.bn3.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer2.3.bn3.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer3.0.conv1.weight | Shape: torch.Size([256, 512, 1, 1]) | Type: torch.float32
+Layer: layer3.0.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.0.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.0.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.0.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.downsample.0.weight | Shape: torch.Size([1024, 512, 1, 1]) | Type: torch.float32
+Layer: layer3.0.downsample.1.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.downsample.1.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.downsample.1.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.0.downsample.1.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.1.conv1.weight | Shape: torch.Size([256, 1024, 1, 1]) | Type: torch.float32
+Layer: layer3.1.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.1.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.1.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.1.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.1.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.1.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.1.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.2.conv1.weight | Shape: torch.Size([256, 1024, 1, 1]) | Type: torch.float32
+Layer: layer3.2.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.2.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.2.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.2.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.2.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.2.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.2.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.3.conv1.weight | Shape: torch.Size([256, 1024, 1, 1]) | Type: torch.float32
+Layer: layer3.3.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.3.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.3.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.3.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.3.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.3.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.3.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.4.conv1.weight | Shape: torch.Size([256, 1024, 1, 1]) | Type: torch.float32
+Layer: layer3.4.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.4.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.4.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.4.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.4.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.4.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.4.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.5.conv1.weight | Shape: torch.Size([256, 1024, 1, 1]) | Type: torch.float32
+Layer: layer3.5.bn1.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn1.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn1.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn1.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.conv2.weight | Shape: torch.Size([256, 256, 3, 3]) | Type: torch.float32
+Layer: layer3.5.bn2.weight | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn2.bias | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn2.running_mean | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.bn2.running_var | Shape: torch.Size([256]) | Type: torch.float32
+Layer: layer3.5.conv3.weight | Shape: torch.Size([1024, 256, 1, 1]) | Type: torch.float32
+Layer: layer3.5.bn3.weight | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.5.bn3.bias | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.5.bn3.running_mean | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer3.5.bn3.running_var | Shape: torch.Size([1024]) | Type: torch.float32
+Layer: layer4.0.conv1.weight | Shape: torch.Size([512, 1024, 1, 1]) | Type: torch.float32
+Layer: layer4.0.bn1.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn1.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn1.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn1.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.conv2.weight | Shape: torch.Size([512, 512, 3, 3]) | Type: torch.float32
+Layer: layer4.0.bn2.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn2.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn2.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.bn2.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.0.conv3.weight | Shape: torch.Size([2048, 512, 1, 1]) | Type: torch.float32
+Layer: layer4.0.bn3.weight | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.bn3.bias | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.bn3.running_mean | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.bn3.running_var | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.downsample.0.weight | Shape: torch.Size([2048, 1024, 1, 1]) | Type: torch.float32
+Layer: layer4.0.downsample.1.weight | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.downsample.1.bias | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.downsample.1.running_mean | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.0.downsample.1.running_var | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.1.conv1.weight | Shape: torch.Size([512, 2048, 1, 1]) | Type: torch.float32
+Layer: layer4.1.bn1.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn1.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn1.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn1.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.conv2.weight | Shape: torch.Size([512, 512, 3, 3]) | Type: torch.float32
+Layer: layer4.1.bn2.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn2.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn2.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.bn2.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.1.conv3.weight | Shape: torch.Size([2048, 512, 1, 1]) | Type: torch.float32
+Layer: layer4.1.bn3.weight | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.1.bn3.bias | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.1.bn3.running_mean | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.1.bn3.running_var | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.2.conv1.weight | Shape: torch.Size([512, 2048, 1, 1]) | Type: torch.float32
+Layer: layer4.2.bn1.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn1.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn1.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn1.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.conv2.weight | Shape: torch.Size([512, 512, 3, 3]) | Type: torch.float32
+Layer: layer4.2.bn2.weight | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn2.bias | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn2.running_mean | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.bn2.running_var | Shape: torch.Size([512]) | Type: torch.float32
+Layer: layer4.2.conv3.weight | Shape: torch.Size([2048, 512, 1, 1]) | Type: torch.float32
+Layer: layer4.2.bn3.weight | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.2.bn3.bias | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.2.bn3.running_mean | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: layer4.2.bn3.running_var | Shape: torch.Size([2048]) | Type: torch.float32
+Layer: fc.weight | Shape: torch.Size([1000, 2048]) | Type: torch.float32
+Layer: fc.bias | Shape: torch.Size([1000]) | Type: torch.float32

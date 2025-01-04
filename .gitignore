@@ -2500,19 +2500,12 @@ CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/cityscapes_dataset/leftImg8bit/val/v
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/cityscapes_dataset/leftImg8bit/val/val/munster/munster_000172_000019_leftImg8bit.png
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/cityscapes_dataset/leftImg8bit/val/val/munster/munster_000173_000019_leftImg8bit.png
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/cityscapes_dataset/list/cityscapes/fine_val.txt
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/cityscapes_colors.txt
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/cityscapes_dataset.py
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/cityscapes_names.txt
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/pspnet_train.ipynb
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/pspnet_train.py
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/pspnet.py
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/resnet.py
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/resnet50_v2.pth
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/train_epoch_200_CPU.pth
-CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/transform.py
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/__pycache__/cityscapes_dataset.cpython-312.pyc
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/__pycache__/pspnet.cpython-37.pyc
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/__pycache__/pspnet.cpython-312.pyc
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/__pycache__/transform.cpython-37.pyc
 CV_1-PYRAMIDS/\[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models/__pycache__/transform.cpython-312.pyc
 CV_5-AUTOENCODERS/mnist_train.csv
+CV_1-PYRAMIDS\[PUBLIC] CV_1-PYRAMIDS-files\tree.txt

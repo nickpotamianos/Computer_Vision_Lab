@@ -12,7 +12,7 @@ clear;
 clc;
 row=256;
 colum=256;
-img=imread('cameraman.tif');
+img=imread('westconcordorthophoto.png');
 img=imresize(img,[row,colum]);
 %img=rgb2gray(img);
 % img=histeq(img);

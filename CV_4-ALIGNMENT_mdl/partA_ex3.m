@@ -3,8 +3,8 @@ clear all;
 close all;
 
 % Test configuration - modified parameters for better convergence
-gap_low = 3;   % Frame gap for low resolution
-gap_high = 10;  % Larger frame gap for high resolution
+gap_low = 20;   % Frame gap for low resolution
+gap_high = 40;  % Larger frame gap for high resolution
 num_iterations = 15;      
 
 % 1. Test with low resolution video (64x64)

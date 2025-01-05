@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9fca851-8f97-49b6-9bec-0f27d74ab775" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/COMPUTER-VISION-LAB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/COMPUTER-VISION-LAB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_1-PYRAMIDS/CV_1-PYRAMIDS.docx" beforeDir="false" afterPath="$PROJECT_DIR$/CV_1-PYRAMIDS/CV_1-PYRAMIDS.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_1_2_fig1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_1_2_fig2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_1_2_fig3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_2_3_fig1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_2_3_fig2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_2_3_fig3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_3_4_fig1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_3_4_fig2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_3_4_fig3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_4_5_fig1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_4_5_fig2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/frame_pair_4_5_fig3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/psnr_comparison_upto_frame_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/psnr_comparison_upto_frame_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV_4-ALIGNMENT_mdl/alignment_results/video1_low/psnr_comparison_upto_frame_4.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nickpotamianos&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nickpotamianos/COMPUTER-VISION-LAB.git&quot;,
+    &quot;accountId&quot;: &quot;dc091799-05b9-496a-9e9a-78e02dc3c7e1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2r1rMblPr12AoG2Tiep6R3faZ6l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.cityscapes_dataset.executor": "Run",
+    "Python.exercise1.executor": "Run",
+    "Python.pspnet_eval.executor": "Run",
+    "Python.pspnet_train.executor": "Run",
+    "Python.resnet.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/nickpotamianos/Library/CloudStorage/OneDrive-UniversityofPatras/CEID/9ο Εξάμηνο/ΘΕΜΑΤΑ ΟΡΑΣΗΣ ΥΠΟΛΟΓΙΣΤΩΝ/ΕΡΓΑΣΙΕΣ/COMPUTER-VISION-LAB",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9fca851-8f97-49b6-9bec-0f27d74ab775" name="Changes" comment="" />
+      <created>1735737374990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735737374990</updated>
+      <workItem from="1735737376538" duration="51000" />
+      <workItem from="1735919702254" duration="618000" />
+      <workItem from="1735920594380" duration="89000" />
+      <workItem from="1735920695271" duration="3295000" />
+      <workItem from="1735924817683" duration="7690000" />
+      <workItem from="1735933483462" duration="827000" />
+      <workItem from="1735950724092" duration="2830000" />
+      <workItem from="1735982861567" duration="308000" />
+      <workItem from="1735983280536" duration="4606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pspnet_train_py$resnet.coverage" NAME="resnet Coverage Results" MODIFIED="1735930574491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS/[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models" />
+    <SUITE FILE_PATH="coverage/rcnn_ipynb$pspnet_eval.coverage" NAME="pspnet_eval Coverage Results" MODIFIED="1735951648722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS/[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models" />
+    <SUITE FILE_PATH="coverage/rcnn_ipynb$exercise1.coverage" NAME="exercise1 Coverage Results" MODIFIED="1735983321227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS" />
+    <SUITE FILE_PATH="coverage/pspnet_train_py$pspnet_eval.coverage" NAME="pspnet_eval Coverage Results" MODIFIED="1735931239645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS/[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models" />
+    <SUITE FILE_PATH="coverage/pspnet_train_py$cityscapes_dataset.coverage" NAME="cityscapes_dataset Coverage Results" MODIFIED="1735928236356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS/[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models" />
+    <SUITE FILE_PATH="coverage/pspnet_train_py$pspnet_train.coverage" NAME="pspnet_train Coverage Results" MODIFIED="1735922996941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_1-PYRAMIDS/[PUBLIC] CV_1-PYRAMIDS-files/codes_and_models" />
+    <SUITE FILE_PATH="coverage/COMPUTER_VISION_LAB$exercise_1.coverage" NAME="exercise_1 Coverage Results" MODIFIED="1735661045104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CV_6-CNN" />
+  </component>
+</project>

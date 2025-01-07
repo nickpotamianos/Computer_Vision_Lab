@@ -1,33 +1,36 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import numpy as np
-import pandas as pd
 from torch.utils.data import Dataset, DataLoader
-from sklearn.preprocessing import StandardScaler
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 
-# Custom Dataset class for MNIST
+def set_seed(seed=42):
+    """Set seeds for reproducibility."""
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+        try:
+            torch.cuda.manual_seed(seed)
+        except RuntimeError:
+            print("Warning: Could not set CUDA seed. Continuing with CPU only.")
+            torch.cuda.is_available = lambda: False
+
+
 class MNISTDataset(Dataset):
     def __init__(self, csv_file):
-        # Read CSV file
         data = pd.read_csv(csv_file)
 
         # Separate labels and features
         self.labels = data.iloc[:, 0].values
         self.features = data.iloc[:, 1:].values
 
-        # First normalize to [0,1]
-        self.features = self.features / 255.0
-
-        # Then center the data
-        self.features = self.features - np.mean(self.features, axis=0)
-
-        # Rescale to [0,1] after centering
-        min_vals = np.min(self.features, axis=0)
-        max_vals = np.max(self.features, axis=0)
-        self.features = (self.features - min_vals) / (max_vals - min_vals + 1e-8)
+        # Convert to float32 and normalize
+        self.features = self.features.astype(np.float32) / 255.0
 
         # Convert to tensors
         self.features = torch.FloatTensor(self.features)
@@ -40,123 +43,200 @@ class MNISTDataset(Dataset):
         return self.features[idx], self.labels[idx]
 
 
-# Autoencoder Model
-class Autoencoder(nn.Module):
-    def __init__(self, input_size=784, latent_size=128):
-        super(Autoencoder, self).__init__()
+class ThreeLayerAutoencoder(nn.Module):
+    def __init__(self, input_size=784, hidden_sizes=[512, 256], latent_size=128):
+        super(ThreeLayerAutoencoder, self).__init__()
+
+        self.input_size = input_size
 
         # Encoder
-        self.encoder = nn.Linear(input_size, latent_size, bias=False)
+        self.encoder = nn.Sequential(
+            nn.Linear(input_size, hidden_sizes[0], bias=False),
+            nn.ReLU(),
+            nn.Linear(hidden_sizes[0], hidden_sizes[1], bias=False),
+            nn.ReLU(),
+            nn.Linear(hidden_sizes[1], latent_size, bias=False)
+        )
 
         # Decoder
-        self.decoder = nn.Linear(latent_size, input_size, bias=False)
-
-        # Initialize weights
-        nn.init.xavier_uniform_(self.encoder.weight)
-        nn.init.xavier_uniform_(self.decoder.weight)
+        self.decoder = nn.Sequential(
+            nn.Linear(latent_size, hidden_sizes[1], bias=False),
+            nn.ReLU(),
+            nn.Linear(hidden_sizes[1], hidden_sizes[0], bias=False),
+            nn.ReLU(),
+            nn.Linear(hidden_sizes[0], input_size, bias=False),
+            nn.Sigmoid()
+        )
 
     def forward(self, x):
-        # Flatten input
+        if x.dim() == 1:
+            x = x.unsqueeze(0)
         x = x.view(x.size(0), -1)
-
-        # Encode
         encoded = self.encoder(x)
-
-        # Decode
-        decoded = torch.sigmoid(self.decoder(encoded))
-
+        decoded = self.decoder(encoded)
         return decoded
+
+    def encode(self, x):
+        if x.dim() == 1:
+            x = x.unsqueeze(0)
+        x = x.view(x.size(0), -1)
+        return self.encoder(x)
+
+    def decode(self, z):
+        return self.decoder(z)
+
+    def count_parameters(self):
+        return sum(p.numel() for p in self.parameters() if p.requires_grad)
 
 
 def train_model(model, train_loader, num_epochs=40, learning_rate=0.001):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    try:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model = model.to(device)
+    except RuntimeError:
+        print("Warning: CUDA error detected. Falling back to CPU.")
+        device = torch.device("cpu")
+        model = model.to(device)
+
     print(f"Using device: {device}")
-    model = model.to(device)
 
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
-    # Lists to store losses
     train_losses = []
 
-    # Training loop
     for epoch in range(num_epochs):
         model.train()
         running_loss = 0.0
 
-        for data, _ in train_loader:
-            data = data.to(device)
+        for batch_idx, (data, _) in enumerate(train_loader):
+            try:
+                data = data.to(device)
+                output = model(data)
+                loss = criterion(output, data.view(data.size(0), -1))
 
-            # Forward pass
-            output = model(data)
-            loss = criterion(output, data.view(data.size(0), -1))
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
 
-            # Backward pass and optimize
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+                running_loss += loss.item()
 
-            running_loss += loss.item()
+                if batch_idx % 50 == 0:
+                    print(
+                        f'Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.6f}')
+
+            except RuntimeError as e:
+                print(f"Error in batch {batch_idx}: {str(e)}")
+                if "CUDA" in str(e):
+                    print("CUDA error detected. Falling back to CPU.")
+                    device = torch.device("cpu")
+                    model = model.to(device)
+                continue
 
         epoch_loss = running_loss / len(train_loader)
         train_losses.append(epoch_loss)
+        print(f'Epoch [{epoch + 1}/{num_epochs}], Average Loss: {epoch_loss:.6f}')
 
-        # Print epoch statistics
-        print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {epoch_loss:.6f}')
-
-        # Compare encoder weights with PCA matrix
-        if epoch % 10 == 0:
-            compare_weights_with_pca(model.encoder.weight.data)
-
-    # Plot training loss
-    plt.figure(figsize=(10, 5))
-    plt.plot(train_losses)
-    plt.title('Training Loss Over Time')
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.grid(True)
-    plt.show()
+    return train_losses
 
 
-def compare_weights_with_pca(encoder_weights):
-    # Here you would compare with VL matrix from PCA
-    print(f"Encoder weights shape: {encoder_weights.shape}")
-
-
-def visualize_reconstructions(model, test_loader, num_images=5):
+def visualize_reconstructions(model, test_loader, num_images=10):
     model.eval()
-    device = next(model.parameters()).device
-
     with torch.no_grad():
-        # Get a batch of test data
-        data, _ = next(iter(test_loader))
-        data = data[:num_images].to(device)
+        # Get a batch of test images
+        images, _ = next(iter(test_loader))
+        images = images[:num_images]
 
         # Get reconstructions
-        reconstructions = model(data)
+        reconstructions = model(images)
+
+        # Reshape back to images
+        images = images.view(-1, 28, 28)
+        reconstructions = reconstructions.view(-1, 28, 28)
 
         # Plot original and reconstructed images
-        plt.figure(figsize=(12, 4))
+        plt.figure(figsize=(20, 4))
         for i in range(num_images):
             # Original
             plt.subplot(2, num_images, i + 1)
-            plt.imshow(data[i].cpu().view(28, 28), cmap='gray')
-            plt.title('Original')
+            plt.imshow(images[i], cmap='gray')
             plt.axis('off')
+            if i == 0:
+                plt.title('Original Images')
 
-            # Reconstruction
+            # Reconstructed
             plt.subplot(2, num_images, i + num_images + 1)
-            plt.imshow(reconstructions[i].cpu().view(28, 28), cmap='gray')
-            plt.title('Reconstructed')
+            plt.imshow(reconstructions[i], cmap='gray')
             plt.axis('off')
+            if i == 0:
+                plt.title('Reconstructed Images')
 
         plt.tight_layout()
         plt.show()
 
 
+def plot_training_loss(losses):
+    plt.figure(figsize=(10, 5))
+    plt.plot(losses, label='Training Loss')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.title('Training Loss Over Time')
+    plt.legend()
+    plt.show()
+
+
+def evaluate_model(model, test_loader):
+    model.eval()
+    total_loss = 0
+    criterion = nn.BCELoss()
+
+    with torch.no_grad():
+        for data, _ in test_loader:
+            output = model(data)
+            loss = criterion(output, data.view(data.size(0), -1))
+            total_loss += loss.item()
+
+    avg_loss = total_loss / len(test_loader)
+    print(f'Average Test Loss: {avg_loss:.6f}')
+    return avg_loss
+
+
+def visualize_latent_space(model, test_loader):
+    model.eval()
+    latent_vectors = []
+    labels = []
+
+    with torch.no_grad():
+        for data, label in test_loader:
+            latent = model.encode(data)
+            latent_vectors.append(latent)
+            labels.append(label)
+
+    latent_vectors = torch.cat(latent_vectors, dim=0)
+    labels = torch.cat(labels, dim=0)
+
+    # Use t-SNE to reduce dimensionality to 2D for visualization
+    from sklearn.manifold import TSNE
+    tsne = TSNE(n_components=2, random_state=42)
+    latent_2d = tsne.fit_transform(latent_vectors.numpy())
+
+    # Plot
+    plt.figure(figsize=(10, 10))
+    scatter = plt.scatter(latent_2d[:, 0], latent_2d[:, 1],
+                          c=labels.numpy(), cmap='tab10',
+                          alpha=0.6)
+    plt.colorbar(scatter)
+    plt.title('t-SNE Visualization of Latent Space')
+    plt.show()
+
+
 def main():
+    # Set seeds
+    set_seed(42)
+
     # Hyperparameters
     BATCH_SIZE = 250
+    HIDDEN_SIZES = [512, 256]
     LATENT_SIZE = 128
     NUM_EPOCHS = 40
 
@@ -167,21 +247,40 @@ def main():
 
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
-    print("Datasets loaded successfully")
 
     # Initialize model
     print("Initializing model...")
-    model = Autoencoder(input_size=784, latent_size=LATENT_SIZE)
+    model = ThreeLayerAutoencoder(hidden_sizes=HIDDEN_SIZES, latent_size=LATENT_SIZE)
+
+    # Print model parameter count
+    num_params = model.count_parameters()
+    print(f"Total number of trainable parameters: {num_params:,}")
 
     # Train model
     print("Starting training...")
-    train_model(model, train_loader, NUM_EPOCHS)
+    train_losses = train_model(model, train_loader, NUM_EPOCHS)
 
-    # Visualize results
-    print("Generating visualizations...")
+    # Plot training loss
+    print("Plotting training loss...")
+    plot_training_loss(train_losses)
+
+    # Evaluate model
+    print("Evaluating model...")
+    test_loss = evaluate_model(model, test_loader)
+
+    # Generate reconstructions
+    print("Generating reconstructions...")
     visualize_reconstructions(model, test_loader)
 
-    print("Training completed!")
+    # Visualize latent space
+    print("Visualizing latent space...")
+    visualize_latent_space(model, test_loader)
+
+    # Save model
+    print("Saving model...")
+    torch.save(model.state_dict(), 'autoencoder_model.pth')
+
+    print("All tasks completed!")
 
 
 if __name__ == "__main__":

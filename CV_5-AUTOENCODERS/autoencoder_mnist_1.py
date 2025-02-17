@@ -199,10 +199,6 @@ def main():
     test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
     print("Datasets loaded successfully.")
 
-    # Compute PCA => VL matrix
-    # If you already computed VL in the previous question, just load it here:
-    # VL = np.load('my_precomputed_VL.npy')  # shape (128, 784)
-    # For demonstration, we compute it on the training set:
     VL = compute_pca_matrix(train_dataset, n_components=LATENT_SIZE)
 
     # Initialize AE

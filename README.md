@@ -44,7 +44,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Principal Component Analysis (PCA) as a baseline.
   - Training AEs and VAEs on datasets like MNIST.
   - Reconstruction quality and visualization of learned features.
-- **Tools Used:** Python (TensorFlow/Keras or PyTorch).
+- **Tools Used:** Python (PyTorch).
 
 ### 6. Convolutional Neural Networks (CNNs) for Object Detection ([Details](CV_6-CNN/CV_6-CNN.pdf))
 - **Objective:** Apply deep learning for object detection and localization.
@@ -52,7 +52,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - R-CNN architecture and its components (region proposal, feature extraction, classification).
   - Intersection over Union (IoU) metrics.
   - Training CNNs with datasets annotated for object detection.
-- **Tools Used:** Python (TensorFlow/Keras or PyTorch).
+- **Tools Used:** Python (PyTorch).
 
 ---
 

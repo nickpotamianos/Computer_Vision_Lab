@@ -46,7 +46,7 @@ This repository contains exercises from the Computer Vision course at the Univer
   - Reconstruction quality and visualization of learned features.
 - **Tools Used:** Python (TensorFlow/Keras or PyTorch).
 
-### 6. Convolutional Neural Networks (CNNs) for Object Detection ([Details](CV_6-CNN/CV_CNN-1.pdf))
+### 6. Convolutional Neural Networks (CNNs) for Object Detection ([Details](CV_6-CNN/CV_6-CNN.pdf))
 - **Objective:** Apply deep learning for object detection and localization.
 - **Topics Covered:**
   - R-CNN architecture and its components (region proposal, feature extraction, classification).
